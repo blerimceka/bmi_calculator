@@ -73,12 +73,12 @@ button.addEventListener("click", function(){
             $("#bmi").addClass("underweight");
             $("#myRange").attr("value", result);
             $("#myRange").addClass("sliderun")
-        }else if (result > 17.5 && result < 25.9){
+        }else if (result >= 17.5 && result < 25.9){
             $("#bmi").text("Normal!");
             $("#bmi").addClass("normal");
             $("#myRange").attr("value", result);
             $("#myRange").addClass("slider")
-        }else if (result > 26 && result < 31){
+        }else if (result >= 26 && result < 31){
             $("#bmi").text("Overweight!");
             $("#bmi").addClass("underweight");
             $("#myRange").attr("value", result);
@@ -98,12 +98,12 @@ button.addEventListener("click", function(){
             $("#bmi").addClass("underweight");
             $("#myRange").attr("value", result);
             $("#myRange").addClass("sliderun")
-        }else if (result > 18.6 && result < 24.9){
+        }else if (result >= 18.6 && result <= 24.9){
             $("#bmi").text("Normal!");
             $("#bmi").addClass("normal");
             $("#myRange").attr("value", result);
             $("#myRange").addClass("slider")
-        }else if (result > 25.0 && result < 29.9){
+        }else if (result >= 25 && result <= 29.9){
             $("#bmi").text("Overweight!");
             $("#bmi").addClass("underweight");
             $("#myRange").attr("value", result);
@@ -131,11 +131,11 @@ slider.oninput = function() {
         $("#bmi").text("Underweight!");
         $("#bmi").addClass("underweight");
     }
-    else if (this.value > 18.6 && this.value < 24.9){
+    else if (this.value >= 18.6 && this.value <= 24.9){
         $("#bmi").text("Normal!");
         $("#bmi").addClass("normal");
     }
-    else if (this.value > 25.0 && this.value < 29.9){
+    else if (this.value >= 25.0 && this.value <= 29.9){
         $("#bmi").text("Overweight!");
         $("#bmi").addClass("underweight");
     }
